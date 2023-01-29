@@ -1,0 +1,337 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "txHash": "0x1ea47269e82d22b4547d044d4f1bf8d1ed5e717f38816c580bb1eac6594896d8"
+  },
+  "proxies": [
+    {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0xcd4cfbba1b84b1c6ef886c262883cd1d8759e2c84c4ec66cffc6ad04ccbf58b4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0x6cdbbffe2bb867a9bb3bf5d352160b44d216558cb9785afd757b2d0137196008",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "ce2dc4bcc0a5205fee24ab084f69f4d08141cb6c86a5e4fb21cbb375c911b161": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "txHash": "0x8a5cb426f94a8fb85315b510300a4e24eee714914bbc0c9959ca34e410299cb7",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "numberOfCampaigns",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Crowdfunding_Version1",
+            "src": "contracts\\Crowdfunding_Version1.sol:27"
+          },
+          {
+            "label": "deadline",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Crowdfunding_Version1",
+            "src": "contracts\\Crowdfunding_Version1.sol:28"
+          },
+          {
+            "label": "campaigns",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_struct(Campaign)3161_storage)",
+            "contract": "Crowdfunding_Version1",
+            "src": "contracts\\Crowdfunding_Version1.sol:30"
+          },
+          {
+            "label": "pledgedAmount",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))",
+            "contract": "Crowdfunding_Version1",
+            "src": "contracts\\Crowdfunding_Version1.sol:31"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(uint256 => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Campaign)3161_storage)": {
+            "label": "mapping(uint256 => struct Crowdfunding_Version1.Campaign)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Campaign)3161_storage": {
+            "label": "struct Crowdfunding_Version1.Campaign",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "campaignImage",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "goal",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "pledged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "startCampaign",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "endCampaign",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "token",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool",
+                "offset": 20,
+                "slot": "8"
+              }
+            ],
+            "numberOfBytes": "288"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "b5d6f686fcfb086eeb7c0568696115da9699f37aacb23ea6fa9f675932001108": {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0x604911e3f924f874425c1ff5e349aacd412fa896d6cc9d2820650b4d232a8aa6",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "numberOfCampaigns",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Crowdfunding_Version2",
+            "src": "contracts\\Crowdfunding_Version2.sol:27"
+          },
+          {
+            "label": "deadline",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Crowdfunding_Version2",
+            "src": "contracts\\Crowdfunding_Version2.sol:28"
+          },
+          {
+            "label": "campaigns",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_struct(Campaign)3700_storage)",
+            "contract": "Crowdfunding_Version2",
+            "src": "contracts\\Crowdfunding_Version2.sol:30"
+          },
+          {
+            "label": "pledgedAmount",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))",
+            "contract": "Crowdfunding_Version2",
+            "src": "contracts\\Crowdfunding_Version2.sol:31"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(uint256 => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Campaign)3700_storage)": {
+            "label": "mapping(uint256 => struct Crowdfunding_Version2.Campaign)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Campaign)3700_storage": {
+            "label": "struct Crowdfunding_Version2.Campaign",
+            "members": [
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "campaignImage",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "goal",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "pledged",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "startCampaign",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "endCampaign",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "token",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool",
+                "offset": 20,
+                "slot": "8"
+              }
+            ],
+            "numberOfBytes": "288"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
